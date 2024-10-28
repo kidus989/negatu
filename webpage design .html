@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old Google Replica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(https://i.pinimg.com/736x/3f/c4/7d/3fc47d74f9788657d95709eb4824298c.jpg);
+            background-size: 100%;
+        }
+        @media only screen and(max-width:767){}
+
+        .container {
+            text-align: center;
+            padding-top: 50px;
+            animation: fade .8s ease-out;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: transparent;
+            background-image: url(data:image/jpeg;base64,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);
+            background-clip: text;
+            animation: fade .8s ease-out;
+        }
+
+        .search-box {
+            margin-top: 20px;
+            animation: fade .8s ease-out;
+        }
+
+        input[type="text"] {
+            width: 400px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #dcdcdc;
+            border-radius: 24px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+            animation: fade .8s ease-out;
+        }
+
+        .buttons {
+            margin-top: 20px;
+            animation: fade .8s ease-out;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+            cursor: pointer;
+            margin: 5px;
+            transition: background-color 0.3s;
+            animation: fade .8s ease-out;
+        }
+
+        button:hover {
+            background-color: #e8e8e8;
+            animation: fade .8s ease-out;
+        }
+
+        .results {
+            margin-top: 30px;
+            text-align: left;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            display: none; /* Initially hidden */
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fade .8s ease-out;
+        }
+
+        .result-item {
+            margin-bottom: 15px;
+            animation: fade .8s ease-out;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            animation: fade .8s ease-out;
+        }
+    .box2{
+        height:620px;
+        width: 50px;
+        border: 2px solid rgba(255, 255, 255, 0.404);
+        backdrop-filter: blur(10px);
+        position: absolute;
+        top: 1px;
+        left: 0%;
+        border-radius: 10px;
+        animation: slid .8s ease-out;
+    }
+    @keyframes slid{
+        from{transform: translatex(-100%);}
+        to{transform: translatex(0%);}
+    }
+    @keyframes fade{
+        from{opacity: 0;}
+        to[opacity: 1;]
+    }
+    .ion1{
+        font-size: 40px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        color: red;
+        transition: .5s;
+    }
+    .ion1:hover{
+        font-size: 50px;
+        color: rgb(255, 30, 0);
+    }
+    .ion2{
+        font-size: 40px;
+        text-align: center;
+        
+        color: rgb(43, 43, 163);
+        transition: .5s;
+    }
+
+    .ion2:hover{
+        font-size: 50px;
+        color: rgb(25, 25, 255);
+    }
+    .ion3{
+        font-size: 40px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        color: rgb(128, 30, 0);
+        transition: .5s;
+    }
+    .ion4:hover{
+        font-size: 50px;
+        color: rgb(187, 46, 3);
+    }
+    .ion4{
+        font-size: 40px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        color: rgb(0, 89, 161);
+        transition: .5s;
+    }
+    .ion4:hover{
+        font-size: 50px;
+        color: rgb(5, 122, 218);
+    }
+    .ion5{
+        font-size: 40px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        color: rgb(0, 49, 71);
+        transition: .5s;
+    }
+
+    .ion5:hover{
+        font-size: 50px;
+        color: rgb(3, 103, 150);
+    }
+    .ion6{
+        font-size: 40px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        color: rgb(0, 71, 71);
+        transition: .5s;
+    }
+
+    .ion6:hover{
+        font-size: 50px;
+        color: rgb(6, 146, 146);
+    }
+    .ion7{
+        font-size: 40px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        color: rgb(46, 71, 0);
+        transition: .5s;
+    }
+
+    .ion7:hover{
+        font-size: 50px;
+        color: rgb(99, 151, 3);
+    }
+    .ion8{
+        font-size: 40px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        color: rgb(4, 67, 87); 
+        transition: .5s;
+    }
+    .ion8:hover{
+        font-size: 50px;
+        color: rgb(13, 124, 158);
+    }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>K Google</h1>
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search Google or type a URL">
+        </div>
+        <div class="buttons">
+            <button onclick="performSearch()">Google Search</button>
+            <button onclick="performLuckySearch()">I'm Feeling Good</button>
+        </div>
+        
+        <div class="results" id="results">
+            <h2>Search Results:</h2>
+            <div id="results-container"></div>
+        </div>
+    </div>
+    <div class="box2">
+        <ion-icon name="logo-youtube" class="ion1"></ion-icon>
+        <br>
+        <br>
+        <br>
+        
+        <ion-icon name="logo-twitter" class="ion2"></ion-icon>
+         <br>
+         <br>
+         <br>
+         
+         <ion-icon name="logo-instagram" class="ion3"></ion-icon>
+         <br>
+         <br>
+         <br>
+         
+         <ion-icon name="logo-google" class="ion4"></ion-icon>
+         <br>
+         <br>
+         <br>
+         
+         <ion-icon name="logo-github" class="ion5"></ion-icon>
+         <br>
+         <br>
+         <br>
+         
+         <ion-icon name="logo-chrome" class="ion6"></ion-icon>
+         <br>
+         <br>
+         <br>
+         <ion-icon name="logo-android" class="ion7"></ion-icon>
+         <br>
+         <br>
+         <br>
+         <ion-icon name="book-sharp" class="ion8"></ion-icon>
+    </div>
+    <img src="" alt="">
+    <footer>
+        <p>© 2024 Kidus google</p>
+    </footer>
+
+    <script>
+        function performSearch() {
+            const query = document.getElementById('search-input').value;
+            displayResults(query);
+        }
+
+        function performLuckySearch() {
+            const query = document.getElementById('search-input').value;
+            displayResults(query, true);
+        }
+
+        function displayResults(query, lucky = false) {
+            const resultsContainer = document.getElementById('results-container');
+            const resultsDiv = document.getElementById('results');
+            resultsContainer.innerHTML = ''; // Clear previous results
+
+            if (query) {
+                // Simulate search results
+                const result = lucky ? `You are feeling lucky! Here’s what we found for "${query}".` : `Results for "${query}":`;
+                resultsContainer.innerHTML += `<div class="result-item">${result}</div>`;
+                
+                // Simulated links (for demonstration)
+                for (let i = 1; i <= 5; i++) {
+                    resultsContainer.innerHTML += `<div class="result-item"><a href="#">Result Link ${i} for "${query}"</a></div>`;
+                }
+
+                resultsDiv.style.display = 'block'; // Show results
+            } else {
+                resultsDiv.style.display = 'none'; // Hide results if no query
+            }
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
